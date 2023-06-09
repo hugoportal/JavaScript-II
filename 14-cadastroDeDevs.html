@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="./14-index.js" defer></script>
+    <title>Cadastro de DEVs</title>
+  </head>
+  <body>
+    <h1>Exercício de Cadastro de DEVs</h1>
+    <p>
+      Construa uma página web que permita cadastrar desenvolvedores, suas
+      tecnologias e tempos de experiência.
+    </p>
+
+    <ul>
+      <li>
+        A página deve ter um input para o nome completo do desenvolvedor e um
+        botão para adicionar uma nova tecnologia.
+      </li>
+      <li>
+        Ao clicar no botão um evento deve ser disparado criando no formulário
+        uma nova linha de inputs contendo:
+      </li>
+      <ul>
+        <li>um campo texto para o nome da tecnologia</li>
+        <li>
+          um grupo de bnotões tipo "radio" com opções de tempo de experiência
+          (por exemplo, "0-2 anos", "3-4 anos" e "5+ anos")
+        </li>
+        <li>um botão de remover que deve excluir essa linha.</li>
+        <li>
+          O formulário também deve ter um botão de cadastrar que salva as
+          informaçoes do dev em um array e limpa o formulário. Para testar o
+          funcionamento você pode utilizar um semples console.log()
+        </li>
+      </ul>
+    </ul>
+    <p>
+      Para esse exercício você deve utilizar eventos adicionados via javascript
+      e a página deve funcionar sem acionar um recarregamento
+    </p>
+
+    <hr />
+
+    <h2>Cadastrar Novo Desenvolvedor</h2>
+
+    <form id="devForm">
+      <label for="fullname">Nome Completo:</label>
+      <input type="text" name="fullname" id="fullname" /><br /><br />
+
+      <label>Tecnologias:</label><br />
+      <button id="addTechBtn" type="button">Adicionar Nova</button>
+      <ul id="stackInputs"></ul>
+      <br />
+      <button type="submit">Cadastrar</button>
+    </form>
+  </body>
+</html>
